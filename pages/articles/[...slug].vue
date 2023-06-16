@@ -19,12 +19,8 @@
                     </div>
                 </div>
                 <div>
-                    <div class="bg-base-100 rounded-lg shadow-md my-4 px-8 py-12">
-                        Side Panel
-                    </div>
-                    <div class="bg-base-100 rounded-lg shadow-md my-4 px-8 py-12">
-                        Side Panel
-                    </div>
+                    <AuthorPanel />
+              <LatestPostPanel />
                 </div>
             </div>
         </main>

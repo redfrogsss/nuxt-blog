@@ -14,9 +14,17 @@ const query: QueryBuilderParams = { path: '/articles', where: [{ layout: 'articl
             <template #default="{ list }">
               <div class="bg-base-100 rounded-lg shadow-md my-4 px-8 py-12" v-for="article in list">
                 <article class="prose">
-                  <h2><NuxtLink :to="`${article._path}`">{{ article.title }}</NuxtLink> </h2>
-                  <small>{{ new Date(article.created_date).toDateString() }}</small>
-                  <p>{{ article.description }}</p>
+                  <h2 class="mb-0">
+                    <NuxtLink :to="`${article._path}`" class="no-underline hover:text-blue-500">{{ article.title }}
+                    </NuxtLink>
+                  </h2>
+                  <small>
+                    <IconsDateIcon className="h-[1rem] mb-1 mr-1 inline" />{{ new
+                      Date(article.created_date).toDateString() }}
+                  </small>
+                  <p>
+                    <small>{{ article.description }}</small>
+                  </p>
                 </article>
               </div>
             </template>
@@ -32,14 +40,9 @@ const query: QueryBuilderParams = { path: '/articles', where: [{ layout: 'articl
           </div>
         </div>
         <div>
-          <div class="bg-base-100 rounded-lg shadow-md my-4 px-8 py-12">
-            Side Panel
-          </div>
-          <div class="bg-base-100 rounded-lg shadow-md my-4 px-8 py-12">
-            Side Panel
-          </div>
+          <AuthorPanel />
+          <LatestPostPanel />
         </div>
       </div>
     </main>
-  </div>
-</template>
+</div></template>
