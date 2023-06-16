@@ -12,7 +12,7 @@ const query: QueryBuilderParams = { path: '/articles', where: [{ layout: 'articl
           <ContentList path="/articles">
             <template #default="{ list }">
               <div class="bg-base-100 rounded-lg shadow-md my-4 px-8 py-12" v-for="article in list">
-                <article class="prose">
+                <article class="prose prose-slate w-full inline">
                   <h2 class="mb-0">
                     <NuxtLink :to="`${article._path}`" class="no-underline hover:text-blue-500">{{ article.title }}
                     </NuxtLink>
