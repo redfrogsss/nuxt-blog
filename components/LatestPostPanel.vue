@@ -8,8 +8,12 @@
                 <ContentList :query="query">
                     <template #default="{ list }">
                         <div v-for="article in list" :key="article._path" class="py-2">
-                            <NuxtLink :to="article._path" class="mb-0 no-underline hover:text-blue-500">{{ article.title }}</NuxtLink><br />
-                            <small>{{ new Date(article.created_date).toDateString() }}</small>
+                            <small>
+                                <NuxtLink :to="article._path" class="mb-0 no-underline hover:text-blue-500">{{ article.title
+                                }}</NuxtLink>
+                                <br />
+                                {{ new Date(article.created_date).toDateString() }}
+                            </small>
                         </div>
                     </template>
                     <template #not-found>
