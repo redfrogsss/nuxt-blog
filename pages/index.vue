@@ -33,17 +33,12 @@ const query: QueryBuilderParams = { path: '/articles', where: [{ layout: 'articl
               </div>
             </template>
           </ContentList>
-
-          <div class="bg-base-100 rounded-lg shadow-md my-4 px-8 py-12">
-            <p>Test</p>
-          </div>
         </div>
         <div>
           <AuthorPanel />
           <LatestPostPanel />
         </div>
       </div>
-      
     </main>
     <Footer />
   </div>
