@@ -17,7 +17,7 @@ nvim src/App.tsx	# or any file you want to put it in
 
 ### App.tsx
 
-```TypeScript
+```ts
 import "./App.css";
 
 // 1. Insert this import
@@ -51,7 +51,7 @@ export default App;
 
 ## Basic Usage
 
-```Typescript
+```ts
 import { Link, useNavigate } from "react-router-dom";
 
 // Example of a link in React Router

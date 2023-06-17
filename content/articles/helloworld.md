@@ -12,7 +12,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ## Testing Markdown Code
 
-```Javascript
+```vue
 <template>
     <div class="bg-base-200 min-h-screen">
         <NavBar />
