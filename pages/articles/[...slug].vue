@@ -3,7 +3,7 @@
         <main class="w-4/6 mx-auto py-8 min-h-screen">
             <div class="grid grid-cols-4 gap-4">
                 <div class="col-span-3">
-                    <div class="bg-base-100 rounded-lg shadow-md my-4 px-8 py-12">
+                    <!-- <div class="bg-base-100 rounded-lg shadow-md my-4 px-8 py-12">
                         <ContentDoc v-slot="{ doc }">
                             <div className="breadcrumbs mb-2">
                                 <ul class="text-sm">
@@ -22,7 +22,9 @@
                                 <ContentRenderer :value="doc" />
                             </article>
                         </ContentDoc>
-                    </div>
+                    </div> -->
+                    <ArticleDocument />
+                    <ArticleComments />
                 </div>
                 <div>
                     <AuthorPanel />
