@@ -9,6 +9,7 @@
                     <ArticleComments />
                 </div>
                 <div>
+                    <ArticleTableOfContent />
                     <AuthorPanel />
                     <LatestPostPanel />
                 </div>

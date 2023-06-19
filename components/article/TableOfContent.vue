@@ -1,0 +1,23 @@
+<template>
+    <div class="bg-base-100 rounded-lg shadow-md my-4 px-8 py-12 hidden lg:block">
+        <div class="prose">
+            <h4>
+                <IconsTableOfContent className="inline h-[1.2rem] mb-1 mr-1" />
+                Table of Content
+            </h4>
+            <div>
+                <ul v-if="toc && toc.links">
+                    <li v-for="link in toc.links" :key="link.text">
+                        <a :href="`#${link.id}`" class="hover:text-blue-500 no-underline font-normal">
+                            {{ link.text }}
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script setup lang="ts">
+const { toc } = useContent()
+</script>
