@@ -5,7 +5,9 @@ const query: QueryBuilderParams = { path: '/articles', where: [{ layout: 'articl
 
 <template>
   <div class="bg-base-200 min-h-screen">
-    
+    <Head>
+      <Title>Jacky FAN's Blog</Title>
+    </Head>
     <NavBar />
     <main class="w-11/12 2xl:w-4/6 mx-auto py-8 min-h-screen">
       <div class="grid grid-cols-1 lg:grid-cols-4 gap-4">
