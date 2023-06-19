@@ -4,7 +4,7 @@
             <NuxtLink to="/" class="btn btn-ghost normal-case text-xl">Jacky FAN's Blog</NuxtLink>
         </div>
         <div class="flex-none">
-            <ul class="menu menu-horizontal px-1">
+            <ul class="menu menu-horizontal px-1 hidden md:flex">
                 <li>
                     <NuxtLink to="/" class="prose">Home</NuxtLink>
                 </li>

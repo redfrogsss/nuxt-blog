@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-base-100 rounded-lg shadow-md my-4 px-8 py-12">
+    <div class="bg-base-100 rounded-lg shadow-md my-4 px-8 py-12 hidden lg:block">
         <div class="avatar">
             <div class="w-full rounded-full">
                 <img src="/pien.png" />

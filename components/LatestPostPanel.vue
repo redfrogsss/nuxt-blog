@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-base-100 rounded-lg shadow-md my-4 px-8 py-8">
+    <div class="bg-base-100 rounded-lg shadow-md my-4 px-8 py-8 hidden lg:block">
         <div class="prose">
             <h4>
                 <IconsNewsPaperIcon className="h-[1.2rem] mb-1 inline" /> Latest Article

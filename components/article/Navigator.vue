@@ -3,24 +3,24 @@ const { prev, next } = useContent()
 </script>
 
 <template>
-    <div class="flex">
-        <NuxtLink v-if="prev" :to="prev._path" class="flex-none bg-base-100 rounded-lg shadow-md my-4 px-8 py-12">
-            <div class="flex h-full w-fit">
-                <IconsArrowLeft className="inline h-[1.2rem] my-auto mr-8" />
-                <div class="prose">
+    <div class="flex max-w-full">
+        <NuxtLink v-if="prev" :to="prev._path" class="flex-shrink bg-base-100 rounded-lg shadow-md my-4 px-4 md:px-8 py-6 md:py-12 w-5/12 md:w-fit">
+            <div class="flex h-full w-full">
+                <IconsArrowLeft className="h-[1.2rem] my-auto hidden md:inline mr-4" />
+                <div class="prose max-w-full">
                     <small>Previous Article</small>
-                    <h6 class="font-bold"> {{ prev.title }} </h6>
+                    <h6 class="font-bold truncate"> {{ prev.title }} </h6>
                 </div>
             </div>
         </NuxtLink>
         <div class="grow" />
-        <NuxtLink v-if="next" :to="next._path" class="flex-none bg-base-100 rounded-lg shadow-md my-4 px-8 py-12">
-            <div class="flex h-full w-fit">
-                <div class="prose">
+        <NuxtLink v-if="next" :to="next._path" class="flex-shrink bg-base-100 rounded-lg shadow-md my-4 px-4 md:px-8 py-6 md:py-12 w-5/12 md:w-fit">
+            <div class="flex h-full w-full">
+                <div class="prose max-w-full">
                     <small>Next Article</small>
-                    <h6 class="font-bold"> {{ next.title }} </h6>
+                    <h6 class="font-bold truncate"> {{ next.title }} </h6>
                 </div>
-                <IconsArrowRight className="inline h-[1.2rem] my-auto ml-8" />
+                <IconsArrowRight className="h-[1.2rem] my-auto hidden md:inline ml-4" />
             </div>
         </NuxtLink>
     </div>

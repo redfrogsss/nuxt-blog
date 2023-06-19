@@ -1,6 +1,5 @@
 <template>
   <div class="bg-base-200">
-    <NavBar />
     <NuxtPage />
   </div>
 </template>
