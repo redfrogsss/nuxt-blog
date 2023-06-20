@@ -5,7 +5,7 @@
                 <IconsTableOfContent className="inline h-[1.2rem] mb-1 mr-1" />
                 Table of Content
             </h4>
-            <div>
+            <small>
                 <ul v-if="toc && toc.links">
                     <li v-for="link in toc.links" :key="link.text">
                         <a :href="`#${link.id}`" class="hover:text-blue-500 no-underline font-normal">
@@ -13,7 +13,7 @@
                         </a>
                     </li>
                 </ul>
-            </div>
+            </small>
         </div>
     </div>
 </template>
