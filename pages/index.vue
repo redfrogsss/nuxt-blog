@@ -3,7 +3,7 @@ import type { QueryBuilderParams } from '@nuxt/content/dist/runtime/types'
 
 export default {
   setup: async function () {
-    const host = "http://localhost"
+    const host = "https://blog.jacky.fan"
     let response = await fetch(`${host}/api/_content/query`, { method: "GET" })
     let responseJSON = await response.json();
     let articleLength = ref(responseJSON.length);
