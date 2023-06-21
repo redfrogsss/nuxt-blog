@@ -66,11 +66,11 @@ export default {
               </div>
             </template>
           </ContentList>
-          <div class="m-auto w-full">
-            <div class="join" v-for="n in getPageTotal(articleLength)">
-              <input class="join-item btn btn-square" type="radio" name="options" :aria-label="(n).toString()"
-                @click="() => { setPage(n) }" :checked="n === page" />
-            </div>
+          <div class="my-4 px-8 pt-12 lg:pb-4 text-center">
+              <div class="join">
+                <input class="join-item btn btn-square" type="radio" name="options" :aria-label="(n).toString()"
+                  @click="() => { setPage(n) }" :checked="n === page" v-for="n in getPageTotal(articleLength)" />
+              </div>
           </div>
         </div>
         <div>
