@@ -2,7 +2,7 @@
 import type { QueryBuilderParams } from '@nuxt/content/dist/runtime/types'
 
 export default {
-  setup: async function () {
+  mounted: async function () {
     const { data: articleData } = await useAsyncData('articleData', () => queryContent('/articles').find())
     let articleLength = articleData.value?.length ?? 0;
     return { articleLength };   // access-able in template
@@ -32,7 +32,7 @@ export default {
 </script>
 
 <template>
-  <ClientOnly>
+  <!-- <ClientOnly> -->
     <div class="bg-base-200 min-h-screen">
       <Head>
         <Title>Jacky FAN's Blog</Title>
@@ -81,5 +81,5 @@ export default {
       </main>
       <Footer />
     </div>
-  </ClientOnly>
+  <!-- </ClientOnly> -->
 </template>
