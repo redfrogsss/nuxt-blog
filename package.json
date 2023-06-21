@@ -13,6 +13,7 @@
     "@vueuse/core": "^10.2.0",
     "@vueuse/nuxt": "^10.2.0",
     "nuxt": "^3.5.2",
+    "nuxt-gtag": "^0.5.7",
     "rss": "^1.2.2"
   },
   "dependencies": {
