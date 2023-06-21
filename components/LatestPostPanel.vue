@@ -27,5 +27,5 @@
 
 <script setup lang="ts">
 import type { QueryBuilderParams } from '@nuxt/content/dist/runtime/types'
-const query: QueryBuilderParams = { path: '/articles', limit: 5, sort: [{ created_date: -1 }] }
+const query: QueryBuilderParams = { path: '/articles', limit: 3, sort: [{ created_date: -1 }] }
 </script>

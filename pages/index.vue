@@ -1,10 +1,39 @@
-<script setup lang="ts">
+<script lang="ts">
 import type { QueryBuilderParams } from '@nuxt/content/dist/runtime/types'
-const query: QueryBuilderParams = { path: '/articles', where: [{ layout: 'articles' }], limit: 5, sort: [{ date: -1 }] }
+
+export default {
+  setup: async function () {
+    const { data: articleData } = await useAsyncData('articleData', () => queryContent('/articles').find())
+    let articleLength = articleData.value?.length ?? 0;
+    return { articleLength };   // access-able in template
+  },
+  data() {
+    return {
+      skipArticles: 0,
+      page: 1,
+    }
+  },
+  methods: {
+    setPage: function (page: number) {
+      this.page = page;
+      this.skipArticles = 5 * (page - 1);
+    },
+    getArticleQuery: function () {
+      const query: QueryBuilderParams = { path: '/articles', limit: 5, skip: this.skipArticles, sort: [{ date: -1 }] }
+      return query;
+    },
+    getPageTotal: function (articleLength: number): number {
+      let total = Math.trunc(articleLength / 5);
+      if ((articleLength % 5) > 0) total++;
+      return total;
+    }
+  }
+}
 </script>
 
 <template>
   <div class="bg-base-200 min-h-screen">
+
     <Head>
       <Title>Jacky FAN's Blog</Title>
     </Head>
@@ -13,7 +42,7 @@ const query: QueryBuilderParams = { path: '/articles', where: [{ layout: 'articl
       <div class="grid grid-cols-1 lg:grid-cols-4 gap-4">
         <div class="col-span-3">
           <!-- Show article list -->
-          <ContentList path="/articles">
+          <ContentList path="/articles" :query="getArticleQuery()">
             <template #default="{ list }">
               <div class="bg-base-100 rounded-lg shadow-md my-4 px-8 py-12" v-for="article in list">
                 <article class="prose prose-slate w-full inline">
@@ -37,6 +66,12 @@ const query: QueryBuilderParams = { path: '/articles', where: [{ layout: 'articl
               </div>
             </template>
           </ContentList>
+          <div class="m-auto w-full">
+            <div class="join" v-for="n in getPageTotal(articleLength)">
+              <input class="join-item btn btn-square" type="radio" name="options" :aria-label="(n).toString()"
+                @click="() => { setPage(n) }" :checked="n === page" />
+            </div>
+          </div>
         </div>
         <div>
           <AuthorPanel />
