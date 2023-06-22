@@ -10,4 +10,7 @@ export default defineNuxtConfig({
             theme: "one-dark-pro",
         },
     },
+    gtag: {
+        id: process.env.NUXT_PUBLIC_GTAG_ID
+    }
 });
