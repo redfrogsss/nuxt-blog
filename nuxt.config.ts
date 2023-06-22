@@ -3,7 +3,7 @@ export default defineNuxtConfig({
     app: {
         pageTransition: { name: "page", mode: "out-in" },
     },
-    modules: ["@nuxt/content", "@nuxtjs/tailwindcss", "@vueuse/nuxt", "nuxt-gtag"],
+    modules: ["@nuxt/content", "@nuxtjs/tailwindcss", "@vueuse/nuxt"],
     content: {
         documentDriven: true,
         highlight: {
