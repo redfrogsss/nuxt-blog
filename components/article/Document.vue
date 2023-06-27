@@ -10,7 +10,7 @@
                 </ul>
             </div>
             <article
-                class="prose prose-slate prose-pre:mockup-code prose-pre:before:relative prose-pre:before:-left-4 w-full inline">
+                class="prose prose-slate prose-pre:mockup-code prose-pre:before:relative prose-pre:before:-left-5 w-full inline">
                 <h1>{{ doc.title }}</h1>
                 <hr class="m-0 mb-2" />
                 <small>
