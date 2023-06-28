@@ -1,6 +1,11 @@
-# Content v2 Minimal Starter
+# Nuxt Blog
 
-Look at the [Content documentation](https://content-v2.nuxtjs.org/) to learn more.
+Nuxt Blog is a simple blog application built with Nuxt.js and Tailwind CSS. It uses the [Nuxt Content](https://content.nuxtjs.org/) module to load markdown files as blog posts.
+
+## Features
+- Markdown blog posts
+- Dark mode
+- RSS feed
 
 ## Setup
 
@@ -9,12 +14,6 @@ Make sure to install the dependencies:
 ```bash
 # yarn
 yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install
 ```
 
 ## Development Server
@@ -22,7 +21,7 @@ pnpm install
 Start the development server on http://localhost:3000
 
 ```bash
-npm run dev
+yarn dev
 ```
 
 ## Production
@@ -30,13 +29,13 @@ npm run dev
 Build the application for production:
 
 ```bash
-npm run build
+yarn build
 ```
 
 Locally preview production build:
 
 ```bash
-npm run preview
+yarn preview
 ```
 
 Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment) for more information.
