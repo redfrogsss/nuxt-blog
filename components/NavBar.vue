@@ -4,12 +4,10 @@
             <NuxtLink to="/" class="btn btn-ghost normal-case text-xl">Jacky FAN's Blog</NuxtLink>
         </div>
         <div class="flex-none">
-            <!-- <ul class="menu menu-horizontal px-1 hidden md:flex"> -->
-            <ul class="menu menu-horizontal px-1 hidden">
-                <li>
-                    <NuxtLink to="/" class="prose">Home</NuxtLink>
-                </li>
-                <li><a href="https://jacky.fan" target="_blank" class="prose">My Website</a></li>
+            <ul class="menu menu-horizontal px-1 hidden md:flex">
+                <!-- <li><a href="mailto:contact@jacky.fan"><IconsMail /></a></li> -->
+                <li><NuxtLink to="/" title="Home Page"><IconsHome /></NuxtLink></li>
+                <li><a href="/rss.xml" title="RSS Feed"><IconsRss /></a></li>
             </ul>
         </div>
     </div>
