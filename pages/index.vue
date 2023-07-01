@@ -45,6 +45,7 @@ export default {
   <div class="bg-base-200 min-h-screen">
     <Head>
       <Title>Jacky FAN's Blog - A Personal Blog by Jacky FAN</Title>
+      <meta name="description" content="Welcome to Jacky FAN's Blog, where I share my passion for all the things I love, including programming, technology and so on." />
     </Head>
     <NavBar />
     <main class="w-11/12 2xl:w-4/6 mx-auto py-8 min-h-screen">
