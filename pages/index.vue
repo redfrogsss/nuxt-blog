@@ -1,20 +1,19 @@
 <script lang="ts">
-useHead({
-  title: "Jacky FAN's Blog - A Personal Blog by Jacky FAN",
-  meta: [
-    {
-      name: "description",
-      content: "Welcome to Jacky FAN's Blog, where I share my passion for all the things I love, including programming, technology and so on.",
-    },
-    {
-      name: "keywords",
-      content: "Jacky FAN, Blog, Personal Blog, Jacky FAN's Blog",
-    },
-  ],
-})
-
 export default {
   setup: async function () {
+    useHead({
+      title: "Jacky FAN's Blog - A Personal Blog by Jacky FAN",
+      meta: [
+        {
+          name: "description",
+          content: "Welcome to Jacky FAN's Blog, where I share my passion for all the things I love, including programming, technology and so on.",
+        },
+        {
+          name: "keywords",
+          content: "Jacky FAN, Blog, Personal Blog, Jacky FAN's Blog",
+        },
+      ],
+    })
     const { data, pending, error, refresh } = await useAsyncData("articles", async () => {
       const articles = await queryContent("articles").sort({ created_date: -1 }).find()
       return { articles: articles }
@@ -44,6 +43,9 @@ export default {
 
 <template>
   <div class="bg-base-200 min-h-screen">
+    <Head>
+      <Title>Jacky FAN's Blog - A Personal Blog by Jacky FAN</Title>
+    </Head>
     <NavBar />
     <main class="w-11/12 2xl:w-4/6 mx-auto py-8 min-h-screen">
       <div class="grid grid-cols-1 lg:grid-cols-4 gap-4">
@@ -52,7 +54,7 @@ export default {
           <div>
             <!-- for SEO -->
             <h1 class="hidden">Jacky FAN's Article</h1>
-            
+
             <div v-for="(article, index) in data?.articles">
               <div v-if="index < skipArticles + 5 && index >= skipArticles">
                 <div class="bg-base-100 rounded-lg shadow-md my-4 px-8 py-12">
