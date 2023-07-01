@@ -2,6 +2,11 @@
 export default defineNuxtConfig({
     app: {
         pageTransition: { name: "page", mode: "out-in" },
+        head: {
+            htmlAttrs: {
+                lang: "en",
+            },
+        },
     },
     modules: ["@nuxt/content", "@nuxtjs/tailwindcss", "@vueuse/nuxt"],
     content: {
@@ -12,7 +17,7 @@ export default defineNuxtConfig({
     },
     appConfig: {
         public: {
-            NUXT_PUBLIC_GTAG_ID: process.env.NUXT_PUBLIC_GTAG_ID
-        }
-    }
+            NUXT_PUBLIC_GTAG_ID: process.env.NUXT_PUBLIC_GTAG_ID,
+        },
+    },
 });

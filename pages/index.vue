@@ -50,6 +50,9 @@ export default {
         <div class="col-span-3">
           <!-- Show article list -->
           <div>
+            <!-- for SEO -->
+            <h1 class="hidden">Jacky FAN's Article</h1>
+            
             <div v-for="(article, index) in data?.articles">
               <div v-if="index < skipArticles + 5 && index >= skipArticles">
                 <div class="bg-base-100 rounded-lg shadow-md my-4 px-8 py-12">

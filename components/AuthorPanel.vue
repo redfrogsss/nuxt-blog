@@ -2,7 +2,7 @@
     <div class="bg-base-100 rounded-lg shadow-md my-4 px-8 py-12 hidden lg:block">
         <div class="avatar">
             <div class="w-full rounded-full">
-                <img src="/pien.png" />
+                <img src="/pien.png" alt="Author's Icon" title="Author's Icon"/>
             </div>
         </div>
         <div class="prose text-center w-full mt-4">
