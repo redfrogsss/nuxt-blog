@@ -15,9 +15,9 @@ useContentHead(page)
                     <ArticleComments />
                 </div>
                 <div>
-                    <ArticleTableOfContent />
                     <AuthorPanel />
                     <LatestPostPanel />
+                    <ArticleTableOfContent />
                 </div>
             </div>
         </main>
