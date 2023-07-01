@@ -10,7 +10,7 @@
             <p>Frontend Developer</p>
         </div>
         <div class="mt-4">
-            <a href="https://jacky.fan" target="_blank" class="btn btn-neutral btn-outline w-full">View My Website</a>
+            <a href="https://jacky.fan" target="_blank" class="btn btn-neutral btn-outline w-full">About Me</a>
         </div>
     </div>
 </template>
