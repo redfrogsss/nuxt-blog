@@ -1,3 +1,9 @@
+<script setup lang="ts">
+const { page } = useContent()
+
+useContentHead(page)
+</script>
+
 <template>
     <div class="bg-base-200 min-h-screen h-full">
         <NavBar />
