@@ -41,7 +41,7 @@ On Hugging Face website, a user named [TheBloke](https://huggingface.co/TheBloke
 
 For running the model, I am using a computer with an i5 cpu and 16GB of ram. Here is the spec of the computer.
 
-![Untitled](/running-meta-llama-2-on-localai/Untitled.png)
+![Untitled](/running-meta-llama-2-on-localai/01.png)
 
 To run the model, I would setup the LocalAI using docker-compose, then download [the model](https://huggingface.co/TheBloke/Llama-2-13B-chat-GGML) and run it.
 
@@ -140,7 +140,7 @@ When sending the first request to LocalAI, it will take some time to load the mo
 
 The response result is as follow:
 
-![Untitled](/running-meta-llama-2-on-localai/Untitled%201.png)
+![Untitled](/running-meta-llama-2-on-localai/02.png)
 
 ```
 Hello! I am LLaMA, an AI assistant developed by Meta AI that can understand and respond to human input in a conversational manner. My primary goal is to assist and provide helpful responses to your questions while ensuring a safe and respectful interaction. I am trained on a massive dataset of text from the internet and can generate human-like responses. Please feel free to ask me anything, and I will do my best to assist you!
@@ -174,11 +174,11 @@ docker-compose restart
 
 Then, in the ChatWizard app setting, change the `Forward Url` to the api’s url.
 
-![Untitled](/running-meta-llama-2-on-localai/Untitled%202.png)
+![Untitled](/running-meta-llama-2-on-localai/03.png)
 
 Then, start the conversation with the model.
 
-![Untitled](/running-meta-llama-2-on-localai/Untitled%203.png)
+![Untitled](/running-meta-llama-2-on-localai/04.png)
 
 Hello again, LLaMA. ✋🏻
 
@@ -192,7 +192,7 @@ However, please noted that I am using the 13B version of the LLaMA model, which 
 
 Let’s start by asking some facts.
 
-![Untitled](/running-meta-llama-2-on-localai/Untitled%204.png)
+![Untitled](/running-meta-llama-2-on-localai/05.png)
 
 The response looks helpful and descriptive. Also, the model can continue the conversation based on previous conversation.
 
@@ -200,9 +200,9 @@ The response looks helpful and descriptive. Also, the model can continue the con
 
 Then, let’s see how Llama 2 handle programming.
 
-![Untitled](/running-meta-llama-2-on-localai/Untitled%205.png)
+![Untitled](/running-meta-llama-2-on-localai/06.png)
 
-![Untitled](/running-meta-llama-2-on-localai/Untitled%206.png)
+![Untitled](/running-meta-llama-2-on-localai/07.png)
 
 Unfortunately, it is unethical to ask Llama 2 to create code and I need to pay AI to generate code for me. 🥺
 
@@ -219,7 +219,7 @@ By manually fixing them, it does run. However, I wonder: can Llama 2 fix its cod
 
 So I try it. And this is the response.
 
-![Untitled](/running-meta-llama-2-on-localai/Untitled%207.png)
+![Untitled](/running-meta-llama-2-on-localai/08.png)
 
 It does try to fix the issues but it also changes the package from `sharp` to `image-resize` as well, which it doesn’t work.
 
@@ -227,13 +227,13 @@ It does try to fix the issues but it also changes the package from `sharp` to `i
 
 Let’s start with a simple cover letter.
 
-![Untitled](/running-meta-llama-2-on-localai/Untitled%208.png)
+![Untitled](/running-meta-llama-2-on-localai/09.png)
 
 It performs pretty well. The letter perfectly fits into the situation. This is a letter that I would actually use for job application (if I need to). Well done.
 
 Then, let’s try some informal type of documents.
 
-![Untitled](/running-meta-llama-2-on-localai/Untitled%209.png)
+![Untitled](/running-meta-llama-2-on-localai/10.png)
 
 It is a bit longer than I expected but it gets the point. The tone is friendly and polite.
 
