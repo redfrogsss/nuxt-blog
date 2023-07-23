@@ -48,13 +48,11 @@ date: 2023-06-23 01:20:00
 
 Here is a code block example:
 
-````js
+```js
 console.log("Hello World")
 ```‎
-````
-`````
 
-````
+`````
 
 Note that the name of the language must be lowercase and recognized by Shiki. You may check the complete list of supported languages [here](https://github.com/shikijs/shiki/blob/main/docs/languages.md#all-languages).
 
