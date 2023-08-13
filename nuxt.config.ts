@@ -8,7 +8,12 @@ export default defineNuxtConfig({
             },
         },
     },
-    modules: ["@nuxt/content", "@nuxtjs/tailwindcss", "@vueuse/nuxt"],
+    modules: [
+        "@nuxt/content",
+        "@nuxtjs/tailwindcss",
+        "@vueuse/nuxt",
+        "@nuxtjs/google-fonts",
+    ],
     content: {
         documentDriven: true,
         highlight: {
@@ -18,6 +23,11 @@ export default defineNuxtConfig({
     appConfig: {
         public: {
             NUXT_PUBLIC_GTAG_ID: process.env.NUXT_PUBLIC_GTAG_ID,
+        },
+    },
+    googleFonts: {
+        families: {
+            Roboto: true,
         },
     },
 });
