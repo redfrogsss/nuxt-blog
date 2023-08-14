@@ -30,4 +30,9 @@ export default defineNuxtConfig({
             Roboto: true,
         },
     },
+    nitro: {
+        prerender: {
+            routes: ["/sitemap.xml", "/rss.xml"],
+        },
+    },
 });
