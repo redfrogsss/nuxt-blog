@@ -9,6 +9,7 @@ Nuxt Blog is a blog web application built with Nuxt.js and Tailwind CSS. It uses
 - SEO
 - Table of Content
 - Next Article / Previous Article
+- Sitemap
 - etc.
 
 <!-- ## Screenshots -->
