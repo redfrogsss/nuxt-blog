@@ -43,6 +43,7 @@ export default {
 
 <template>
   <div class="bg-base-200 min-h-screen">
+
     <Head>
       <Title>Jacky FAN's Blog - A Personal Blog by Jacky FAN</Title>
     </Head>
@@ -59,7 +60,7 @@ export default {
               <div v-if="index < skipArticles + 5 && index >= skipArticles">
                 <div class="bg-base-100 rounded-lg shadow-md my-4 px-8 py-12">
                   <article class="prose prose-slate w-full inline">
-                    <h2 class="mb-0">
+                    <h2 class="mb-0 text-2xl">
                       <NuxtLink :to="`${article._path}`" class="no-underline hover:text-blue-500">{{ article.title }}
                       </NuxtLink>
                     </h2>
@@ -67,9 +68,7 @@ export default {
                       <IconsDateIcon className="h-[1rem] mb-1 mr-1 inline" />{{ new
                         Date(article.created_date).toDateString() }}
                     </small>
-                    <p>
-                      <small>{{ article.description }}</small>
-                    </p>
+                    <p> {{ article.description }} </p>
                   </article>
                 </div>
               </div>
