@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-base-200 font-roboto">
+  <div class="bg-base-200 font-outfit">
     <NuxtPage />
   </div>
 </template>
