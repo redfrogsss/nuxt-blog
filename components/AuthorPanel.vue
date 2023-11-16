@@ -1,7 +1,7 @@
 <template>
-    <div class="bg-base-100 rounded-lg shadow-md my-4 px-8 py-12 hidden lg:block">
-        <div class="avatar">
-            <div class="w-full rounded-full">
+    <div class="bg-base-100 rounded-lg shadow-md my-4 px-8 py-12 hidden lg:block relative">
+        <div class="avatar w-full">
+            <div class="w-full rounded-full aspect-square">
                 <img src="/pien.png" alt="Author's Icon" title="Author's Icon" />
             </div>
         </div>
