@@ -14,11 +14,42 @@
                 <h1>{{ doc.title }}</h1>
                 <hr class="m-0 mb-2" />
                 <small>
-                    <IconsDateIcon className="w-auto h-[1rem] mb-1 mr-1 inline" />{{ new
-                        Date(doc.created_date).toDateString() }} |
-                    <IconsPersonIcon className="w-auto h-[1rem] mb-1 mr-1 inline" />{{ doc.author }}
+                    <IconsDateIcon className="w-auto h-[1.2em] mb-1 mr-1 inline" />{{ new
+                        Date(doc.created_date).toDateString() }}
+                    &nbsp;|&nbsp;
+                    <IconsPersonIcon className="w-auto h-[1.2em] mb-1 mr-1 inline" />{{ doc.author
+                    }}
+                    &nbsp;|&nbsp;
+                    <IconsClock className="w-auto h-[1.2em] mb-1 mr-1 inline" />{{ Math.ceil(countWords(doc.body) / 250) }}
+                    min read
                 </small>
                 <ContentRenderer :value="doc" />
             </article>
         </ContentDoc>
-</div></template>
+    </div>
+</template>
+
+<script setup>
+function countWords(obj) {
+    let totalWords = 0;
+
+    // Helper function to count words in a text string
+    function countWordsInText(text) {
+        const words = text.split(/\s+/);
+        return words.length;
+    }
+
+    // Recursive function to traverse the JSON structure
+    function traverse(node) {
+        if (node.type === "text" && node.value) {
+            totalWords += countWordsInText(node.value);
+        } else if (node.children && node.children.length > 0) {
+            node.children.forEach(traverse);
+        }
+    }
+
+    traverse(obj);
+
+    return totalWords;
+}
+</script>

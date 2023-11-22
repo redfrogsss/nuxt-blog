@@ -1,8 +1,8 @@
 <template>
     <div class="bg-base-100 rounded-lg shadow-md my-4 px-8 py-8 hidden lg:block">
         <div class="prose">
-            <h4>
-                <IconsNewsPaperIcon className="h-[1.2rem] mb-1 inline" /> Latest Articles
+            <h4 class="text-xl">
+                <IconsNewsPaperIcon className="h-[1.2em] mb-1 inline" /> Latest Articles
             </h4>
             <div class="divide-y">
                 <ContentList :query="query">

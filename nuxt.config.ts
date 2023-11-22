@@ -28,6 +28,8 @@ export default defineNuxtConfig({
     googleFonts: {
         families: {
             Roboto: true,
+            Dosis: true,
+            Outfit: true,
         },
     },
     nitro: {
