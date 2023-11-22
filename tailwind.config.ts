@@ -30,11 +30,11 @@ module.exports = {
     daisyui: {
         themes: [
             {
-                cupcake: {
+                winter: {
                     ...require("daisyui/src/theming/themes")[
-                        "[data-theme=cupcake]"
+                        "[data-theme=winter]"
                     ],
-                    primary: "#016C71",
+                    primary: "#0764CE",
                 },
             },
             "night",

@@ -42,7 +42,7 @@ export default {
 </script>
 
 <template>
-  <div class="bg-base-200 min-h-screen">
+  <div class="bg-base-300 min-h-screen">
 
     <Head>
       <Title>Jacky FAN's Blog - A Personal Blog by Jacky FAN</Title>
