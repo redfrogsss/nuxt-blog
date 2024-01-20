@@ -48,7 +48,7 @@ export default {
       <Title>Jacky FAN's Blog - A Personal Blog by Jacky FAN</Title>
     </Head>
     <NavBar />
-    <main class="w-11/12 2xl:w-4/6 mx-auto py-8 min-h-screen">
+    <main class="max-w-[1280px] px-4 md:px-6 lg:px-8 mx-auto py-8 min-h-screen">
       <div class="grid grid-cols-1 lg:grid-cols-4 gap-4">
         <div class="col-span-3">
           <!-- Show article list -->
