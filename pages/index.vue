@@ -54,14 +54,15 @@ export default {
           <!-- Show article list -->
           <div>
             <!-- for SEO -->
-            <h1 class="hidden">Jacky FAN's Article</h1>
+            <h1 class="hidden">Jacky FAN's Blog</h1>
 
             <div v-for="(article, index) in data?.articles">
               <div v-if="index < skipArticles + 5 && index >= skipArticles">
                 <div class="bg-base-100 rounded-lg shadow-md my-4 px-8 py-12">
                   <article class="prose prose-slate w-full inline">
                     <h2 class="mb-0 text-2xl">
-                      <NuxtLink :to="`${article._path}`" class="no-underline hover:text-blue-500">{{ article.title }}
+                      <NuxtLink :to="`${article._path}`" class="no-underline hover:text-blue-500 transition-all">
+                        {{ article.title }}
                       </NuxtLink>
                     </h2>
                     <small>
