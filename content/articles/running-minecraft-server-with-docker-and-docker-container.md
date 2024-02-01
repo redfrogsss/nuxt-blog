@@ -3,6 +3,7 @@ title: Running Minecraft Server with Docker and docker-compose
 author: Jacky FAN
 created_date: 2024-02-01 21:42:00
 tags: [Minecraft Server, Docker, docker-compose, Raspberry Pi 5, Spigot]
+description: In this blog post, I am going to share how I run my minecraft server with docker and docker-compose.
 ---
 
 <img src="/assets/img/running-minecraft-server-with-docker-and-docker-container/01.png" alt="Screenshot of my minecraft server" class="rounded-lg shadow-lg">
@@ -12,6 +13,8 @@ tags: [Minecraft Server, Docker, docker-compose, Raspberry Pi 5, Spigot]
 I was moving my Minecraft Server to my new Raspberry Pi 5 and I discovered that I had done something to the server setup in the past that saved me a lot of time, which was using docker-compose to set up the Minecraft Server.
 
 The benefit of using docker-compose to set up the Minecraft Server is its ability to apply the same images and configurations to different machines. It saves me a lot of time in setting up applications and servers without reinstalling dependent software, such as Java JDK, Python, and so on, on a new machine.
+
+In this blog post, I am going to share how I run my minecraft server with docker and docker-compose.
 
 ## Run Minecraft Server with Docker and docker-compose
 
