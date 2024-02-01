@@ -5,7 +5,7 @@ created_date: 2024-02-01 21:42:00
 tags: [Minecraft Server, Docker, docker-compose, Raspberry Pi 5, Spigot]
 ---
 
-![Screenshot of my minecraft server](/assets/img/running-minecraft-server-with-docker-and-docker-container/01.png)
+<img src="/assets/img/running-minecraft-server-with-docker-and-docker-container/01.png" alt="Screenshot of my minecraft server" class="rounded-lg shadow-lg">
 
 ## Intro
 
