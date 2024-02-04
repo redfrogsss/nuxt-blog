@@ -2,6 +2,9 @@
     <div class="mockup-code prose-mockup-code shadow">
         <slot />
     </div>
+    <p v-if="filename" class="text-center">
+        <code>{{ filename }}</code>
+    </p>
 </template>
   
 <script setup lang="ts">
