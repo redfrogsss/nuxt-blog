@@ -34,9 +34,9 @@ wget https://download.getbukkit.org/spigot/spigot-1.19.4.jar
 
 Then, create a new file named `Dockerfile` and input the following content.
 
-`Dockerfile`
+<!-- `Dockerfile` -->
 
-```docker
+```docker [Dockerfile]
 FROM openjdk:17-oracle
 
 WORKDIR "/app"
@@ -51,18 +51,18 @@ Then, create another new file named `docker-compose.yml` and input the following
 `docker-compose.yml`
 
 ```yaml
-version: '3'
+version: "3"
 
 services:
-  server:
-    restart: unless-stopped
-    build:
-      context: .
-    ports:
-      - "25565:25565/tcp"
-      - "25565:25565/udp"
-    volumes:
-      - ".:/app"
+    server:
+        restart: unless-stopped
+        build:
+            context: .
+        ports:
+            - "25565:25565/tcp"
+            - "25565:25565/udp"
+        volumes:
+            - ".:/app"
 ```
 
 This `docker-compose.yml` file defines a service named `server` with a restart policy of `unless-stopped`. It builds the image using the current directory as the build context and maps the container's ports 25565 for TCP and UDP traffic. It also creates a volume that mounts the current directory to the `/app` directory in the container for easy management of server files and configurations.
