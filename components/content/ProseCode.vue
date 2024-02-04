@@ -1,6 +1,10 @@
 <template>
-    <div class="mockup-code prose-mockup-code shadow">
+    <div class="mockup-code prose-mockup-code shadow relative">
         <slot />
+        <button className="btn btn-square btn-sm absolute bottom-4 right-4 inline opacity-95" aria-label="Copy Code"
+            @click="copyToClipboard(code)">
+            <IconsCopyClipboard className="p-1" />
+        </button>
     </div>
     <p v-if="filename" class="text-center">
         <code>{{ filename }}</code>
@@ -8,6 +12,8 @@
 </template>
   
 <script setup lang="ts">
+import IconsCopyClipboard from '../icons/CopyClipboard.vue';
+
 defineProps({
     code: {
         type: String,
@@ -30,6 +36,10 @@ defineProps({
         default: null
     }
 })
+
+async function copyToClipboard(value = "") {
+    return navigator.clipboard.writeText(value);
+}
 </script>
   
 <style>
@@ -48,8 +58,9 @@ defineProps({
 
 .prose-mockup-code pre code span.line:before {
     content: attr(line);
-    pointer-event: none;
-    margin-right: 20px;
+    display: inline-block;
+    width: 28px;
     opacity: .5;
+    pointer-events: none;
 }
 </style>
