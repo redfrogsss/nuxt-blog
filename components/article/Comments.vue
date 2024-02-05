@@ -1,7 +1,9 @@
 <template>
-    <div class="bg-base-100 rounded-lg shadow-md my-4 px-8 py-12">
+    <div class="bg-base-100 rounded-lg shadow-md my-4 px-3 md:px-8 py-12">
         <p class="prose">
-        <h4><IconsComments className="inline h-[1.2rem] mb-1 mx-1"/>Comments</h4>
+        <h4>
+            <IconsComments className="inline h-[1.2rem] mb-1 mx-1" />Comments
+        </h4>
         </p>
     </div>
 </template>
