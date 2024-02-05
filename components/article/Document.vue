@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-base-100 rounded-lg shadow-md my-4 px-8 py-12">
+    <div class="bg-base-100 rounded-lg shadow-md my-4 px-4 md:px-8 py-12">
         <ContentDoc v-slot="{ doc }">
             <div className="breadcrumbs mb-2">
                 <ul class="text-sm">
