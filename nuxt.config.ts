@@ -37,4 +37,5 @@ export default defineNuxtConfig({
             routes: ["/sitemap.xml", "/rss.xml"],
         },
     },
+    css: ['~/assets/css/global.css']
 });
