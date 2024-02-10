@@ -1,5 +1,5 @@
 <template>
-    <div class="mockup-code prose-mockup-code shadow relative">
+    <div class="mockup-code prose-mockup-code shadow relative rounded-2xl">
         <slot />
         <button className="btn btn-square btn-sm absolute bottom-4 right-4 inline opacity-95" aria-label="Copy Code"
             @click="copyToClipboard(code)">
