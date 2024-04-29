@@ -18,7 +18,7 @@ head:
 
 Nowadays, there are many package manager on the Internet, such as `npm`, `pnpm` and `yarn`. Most of the time, we do not want to accidentally run other package managers when the project is already setup using a package manager for avoiding potential issues in the future.
 
-![Yarn warning about mixing package managers](/assets/img/Force-use-npm-yarn-or-pnpm/Untitled.png)
+![Yarn warning about mixing package managers](/assets/img/Force-use-npm-yarn-or-pnpm/01.png)
 
 Therefore, this article shows how to force a project to use specific package manager.
 
@@ -32,7 +32,7 @@ The first solution shows in the documents of pnpm, which applied `only-allow` np
 
 And it doesn’t work. 
 
-![Untitled](/assets/img/Force-use-npm-yarn-or-pnpm/Untitled%201.png)
+![Untitled](/assets/img/Force-use-npm-yarn-or-pnpm/02.png)
 
 The `only-allow` package did stopped `npm i` from running and shown the warning messages. However, it stills generate `package-lock.json` file that we do not want. 
 
@@ -58,11 +58,11 @@ package.json
 
 Here are the results:
 
-![Untitled](/assets/img/Force-use-npm-yarn-or-pnpm/Untitled%202.png)
+![Untitled](/assets/img/Force-use-npm-yarn-or-pnpm/03.png)
 
-![Untitled](/assets/img/Force-use-npm-yarn-or-pnpm/Untitled%203.png)
+![Untitled](/assets/img/Force-use-npm-yarn-or-pnpm/04.png)
 
-![Untitled](/assets/img/Force-use-npm-yarn-or-pnpm/Untitled%204.png)
+![Untitled](/assets/img/Force-use-npm-yarn-or-pnpm/05.png)
 
 There is no `package-lock.json` after running `npm i`. Looks great~
 
