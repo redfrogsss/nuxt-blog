@@ -58,7 +58,7 @@ export default {
 
             <div v-for="(article, index) in data?.articles">
               <div v-if="index < skipArticles + 5 && index >= skipArticles">
-                <div class="bg-base-100 rounded-lg shadow-md my-4 px-8 py-12">
+                <div class="bg-base-100 rounded-3xl shadow-md my-4 px-8 py-12">
                   <article class="prose prose-slate w-full inline">
                     <h2 class="mb-0 text-2xl">
                       <NuxtLink :to="`${article._path}`" class="no-underline hover:text-blue-500 transition-all">
