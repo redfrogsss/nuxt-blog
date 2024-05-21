@@ -1,3 +1,5 @@
+[![wakatime](https://wakatime.com/badge/user/2cbd8003-b8b8-4565-92d7-ad9c23ff1846/project/ed273847-d383-4848-bc59-aa9c0f237566.svg)](https://wakatime.com/badge/user/2cbd8003-b8b8-4565-92d7-ad9c23ff1846/project/ed273847-d383-4848-bc59-aa9c0f237566)
+
 # Nuxt Blog
 
 Nuxt Blog is a blog web application built with Nuxt.js and Tailwind CSS. It uses the [Nuxt Content](https://content.nuxtjs.org/) module to load markdown files as blog posts.
